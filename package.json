@@ -23,7 +23,6 @@
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "./deploy-docs.sh",
-    "prepush": "npm run format:check && npm run build && npm run test"
   },
   "repository": {
     "type": "git",
