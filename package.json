@@ -22,8 +22,7 @@
     "build": "tsc",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "./deploy-docs.sh",
-    "postinstall": "npm install && npm run build"
+    "docs:deploy": "./deploy-docs.sh"
   },
   "repository": {
     "type": "git",

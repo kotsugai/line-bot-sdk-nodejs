@@ -58,7 +58,7 @@ typings/
 .env
 
 # Built files
-dist
+# dist
 
 # Test recent request
 test/helpers/request.json
