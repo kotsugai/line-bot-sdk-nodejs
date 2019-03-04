@@ -27,11 +27,21 @@ export default class Client {
     }
 
     this.config = config;
+    let headers = null;
+    if (!this.config.serviceCode) {
+      headers = {
+        Authorization: "Bearer " + this.config.channelAccessToken
+      };
+    } else {
+      headers = {
+        Authorization: "Bearer " + this.config.channelAccessToken,
+        "X-Line-ServiceCode": this.config.serviceCode
+      };
+    }
+
     this.http = new HTTPClient(
       process.env.API_BASE_URL || "https://api.line.me/v2/bot/",
-      {
-        Authorization: "Bearer " + this.config.channelAccessToken,
-      },
+      headers,
     );
   }
 

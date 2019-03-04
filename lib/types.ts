@@ -5,6 +5,7 @@ export interface Config {
 
 export interface ClientConfig extends Config {
   channelAccessToken: string;
+  serviceCode: string;
 }
 
 export interface MiddlewareConfig extends Config {
