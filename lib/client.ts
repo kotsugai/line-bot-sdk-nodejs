@@ -30,12 +30,12 @@ export default class Client {
     let headers = null;
     if (!this.config.serviceCode) {
       headers = {
-        Authorization: "Bearer " + this.config.channelAccessToken
+        Authorization: "Bearer " + this.config.channelAccessToken,
       };
     } else {
       headers = {
         Authorization: "Bearer " + this.config.channelAccessToken,
-        "X-Line-ServiceCode": this.config.serviceCode
+        "X-Line-ServiceCode": this.config.serviceCode,
       };
     }
 
