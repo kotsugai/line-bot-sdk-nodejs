@@ -1,6 +1,7 @@
 export interface Config {
   channelAccessToken?: string;
   channelSecret?: string;
+  serviceCode?: string;
 }
 
 export interface ClientConfig extends Config {
