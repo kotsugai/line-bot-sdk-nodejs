@@ -23,7 +23,7 @@
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "./deploy-docs.sh",
-    "postinstall": "npm run build"
+    "postinstall": "npm install:npm run build"
   },
   "repository": {
     "type": "git",
